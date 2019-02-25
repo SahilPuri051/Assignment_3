@@ -1,0 +1,51 @@
+17:17:33,798 DEBUG BasicClientConnectionManager:164 – Get connection for route {}->http://api.openweathermap.org:80
+17:17:33,907 DEBUG DefaultClientConnectionOperator:176 – Connecting to api.openweathermap.org:80
+17:17:34,142 DEBUG RequestAddCookies:122 – CookieSpec selected: ignoreCookies
+17:17:34,157 DEBUG RequestAuthCache:76 – Auth cache not set in the context
+17:17:34,157 DEBUG RequestTargetAuthentication:79 – Target auth state: UNCHALLENGED
+17:17:34,157 DEBUG RequestProxyAuthentication:88 – Proxy auth state: UNCHALLENGED
+17:17:34,157 DEBUG DefaultHttpClient:684 – Attempt 1 to execute request
+17:17:34,173 DEBUG DefaultClientConnection:276 – Sending request: GET /data/2.5/weather?q=Pune&APPID=9bac348a4d8a628034772a76de8d87ca HTTP/1.1
+17:17:34,173 DEBUG wire:72 –  >> "GET /data/2.5/weather?q=Pune&APPID=9bac348a4d8a628034772a76de8d87ca HTTP/1.1[\r][\n]"
+17:17:34,173 DEBUG wire:72 –  >> "Accept: */*[\r][\n]"
+17:17:34,173 DEBUG wire:72 –  >> "Content-Length: 0[\r][\n]"
+17:17:34,173 DEBUG wire:72 –  >> "Host: api.openweathermap.org[\r][\n]"
+17:17:34,189 DEBUG wire:72 –  >> "Connection: Keep-Alive[\r][\n]"
+17:17:34,189 DEBUG wire:72 –  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_151)[\r][\n]"
+17:17:34,189 DEBUG wire:72 –  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+17:17:34,189 DEBUG wire:72 –  >> "[\r][\n]"
+17:17:34,189 DEBUG headers:280 – >> GET /data/2.5/weather?q=Pune&APPID=9bac348a4d8a628034772a76de8d87ca HTTP/1.1
+17:17:34,189 DEBUG headers:283 – >> Accept: */*
+17:17:34,189 DEBUG headers:283 – >> Content-Length: 0
+17:17:34,189 DEBUG headers:283 – >> Host: api.openweathermap.org
+17:17:34,204 DEBUG headers:283 – >> Connection: Keep-Alive
+17:17:34,204 DEBUG headers:283 – >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_151)
+17:17:34,204 DEBUG headers:283 – >> Accept-Encoding: gzip,deflate
+17:17:34,298 DEBUG wire:72 –  << "HTTP/1.1 200 OK[\r][\n]"
+17:17:34,314 DEBUG wire:72 –  << "Server: openresty[\r][\n]"
+17:17:34,314 DEBUG wire:72 –  << "Date: Sun, 10 Feb 2019 11:47:35 GMT[\r][\n]"
+17:17:34,314 DEBUG wire:72 –  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+17:17:34,314 DEBUG wire:72 –  << "Content-Length: 448[\r][\n]"
+17:17:34,314 DEBUG wire:72 –  << "Connection: keep-alive[\r][\n]"
+17:17:34,314 DEBUG wire:72 –  << "X-Cache-Key: /data/2.5/weather?APPID=9bac348a4d8a628034772a76de8d87ca&q=pune[\r][\n]"
+17:17:34,314 DEBUG wire:72 –  << "Access-Control-Allow-Origin: *[\r][\n]"
+17:17:34,314 DEBUG wire:72 –  << "Access-Control-Allow-Credentials: true[\r][\n]"
+17:17:34,314 DEBUG wire:72 –  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
+17:17:34,329 DEBUG wire:72 –  << "[\r][\n]"
+17:17:34,329 DEBUG DefaultClientConnection:261 – Receiving response: HTTP/1.1 200 OK
+17:17:34,329 DEBUG headers:264 – << HTTP/1.1 200 OK
+17:17:34,329 DEBUG headers:267 – << Server: openresty
+17:17:34,329 DEBUG headers:267 – << Date: Sun, 10 Feb 2019 11:47:35 GMT
+17:17:34,329 DEBUG headers:267 – << Content-Type: application/json; charset=utf-8
+17:17:34,329 DEBUG headers:267 – << Content-Length: 448
+17:17:34,329 DEBUG headers:267 – << Connection: keep-alive
+17:17:34,329 DEBUG headers:267 – << X-Cache-Key: /data/2.5/weather?APPID=9bac348a4d8a628034772a76de8d87ca&q=pune
+17:17:34,329 DEBUG headers:267 – << Access-Control-Allow-Origin: *
+17:17:34,329 DEBUG headers:267 – << Access-Control-Allow-Credentials: true
+17:17:34,329 DEBUG headers:267 – << Access-Control-Allow-Methods: GET, POST
+17:17:34,361 DEBUG DefaultHttpClient:511 – Connection can be kept alive indefinitely
+17:17:34,501 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 – Parsing response as: application/json; charset=utf-8
+17:17:34,517 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 – Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+17:17:34,738 DEBUG wire:86 –  << "{"coord":{"lon":73.85,"lat":18.52},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":301.844,"pressure":950.97,"humidity":29,"temp_min":301.844,"temp_max":301.844,"sea_level":1025.63,"grnd_level":950.97},"wind":{"speed":1.6,"deg":218},"clouds":{"all":0},"dt":1549798440,"sys":{"message":0.0042,"country":"IN","sunrise":1549762490,"sunset":1549803783},"id":1259229,"name":"Pune","cod":200}"
+17:17:34,738 DEBUG BasicClientConnectionManager:203 – Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7ce97ee5
+17:17:34,738 DEBUG BasicClientConnectionManager:228 – Connection can be kept alive indefinitely
