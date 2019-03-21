@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.utilities.CustomListeners"/>
+    <listener class-name="com.qa.utilities.AnnotationTransformer"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.testcases.LoginPage1Test">
+      <class name="com.qa.testcases.ACEPageTest">
         <methods>
-          <include name="init1"/>
-          <include name="test1"/>
-          <include name="tearDown"/>
+          <include name="enterFrame"/>
+          <include name="init"/>
+          <include name="downloadPngTest"/>
         </methods>
-      </class> <!-- com.qa.testcases.LoginPage1Test -->
-      <class name="com.qa.testcases.LoginPage2Test">
+      </class> <!-- com.qa.testcases.ACEPageTest -->
+      <class name="com.qa.testcases.LoginPageTest">
         <methods>
-          <include name="test2" invocation-numbers="0 1 2 3"/>
+          <include name="usernametext"/>
+          <include name="loginButtonHeight"/>
+          <include name="welcomeMsg"/>
+          <include name="checkboxinital"/>
+          <include name="usernameParameters"/>
+          <include name="loginButtonalign"/>
+          <include name="passwordtext"/>
+          <include name="usernametype"/>
+          <include name="loginButtonColor"/>
+          <include name="tearDown"/>
+          <include name="passwordtype"/>
+          <include name="checkTitle"/>
+          <include name="init"/>
+          <include name="checkboxfinal"/>
+        </methods>
+      </class> <!-- com.qa.testcases.LoginPageTest -->
+      <class name="com.qa.testcases.HomePageTest">
+        <methods>
+          <include name="checkHomePageTitle"/>
           <include name="init"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.testcases.LoginPage2Test -->
+      </class> <!-- com.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

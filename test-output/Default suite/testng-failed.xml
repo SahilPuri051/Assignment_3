@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcases.rest_get">
+      <class name="com.qa.testcases.ACEPageTest">
         <methods>
+          <include name="menuClick"/>
+          <include name="enterFrame"/>
           <include name="init"/>
-          <include name="testgetmethodwithcorrectcity"/>
+          <include name="downloadPngTest"/>
         </methods>
-      </class> <!-- com.qa.testcases.rest_get -->
+      </class> <!-- com.qa.testcases.ACEPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
